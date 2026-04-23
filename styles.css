@@ -214,20 +214,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  width: 24px;
 }
-.hamburger span {
-  display: block;
-  height: 1.5px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 2px;
-  transition: var(--transition);
-}
-.hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* ---- HERO ---- */
 .hero {
@@ -1381,25 +1368,28 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .lang-toggle { display: none; }
   .hamburger {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 28px;
-    padding: 4px;
-    background: none;
-    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 8px;
     cursor: pointer;
     z-index: 1003;
+    transition: background 0.3s;
   }
-  .hamburger span {
-    display: block;
-    height: 2px;
-    background: #fff;
-    border-radius: 2px;
-    transition: transform 0.3s, opacity 0.3s;
+  .hamburger:hover {
+    background: rgba(201,168,76,0.25);
   }
-  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .hamburger.open span:nth-child(2) { opacity: 0; }
-  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .hamburger i {
+    font-size: 1.3rem;
+    color: #C9A84C;
+    transition: transform 0.3s;
+  }
+  .hamburger.open i {
+    transform: rotate(90deg);
+  }
 
   /* 移动端导航 - 侧边栏菜单（覆盖桌面样式） */
   .nav-links {

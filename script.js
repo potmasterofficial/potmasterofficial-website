@@ -772,9 +772,9 @@ document.addEventListener('click', e => {
 // ── Mobile nav ─────────────────────────────────────
 document.addEventListener('click', e => {
   const toggle = e.target.closest('.hamburger');
-  const nav = document.getElementById('mainNav');
-  if (toggle && nav) nav.classList.toggle('nav-open');
-  if (!e.target.closest('#mainNav') && nav) nav.classList.remove('nav-open');
+  const nav = document.getElementById('navLinks');
+  if (toggle && nav) nav.classList.toggle('open');
+  if (!e.target.closest('#navLinks') && nav) nav.classList.remove('open');
 });
 
 // ── Scroll header ──────────────────────────────────

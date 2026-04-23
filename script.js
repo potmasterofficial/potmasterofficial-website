@@ -11,7 +11,7 @@ const i18n = {
     nav_contact:  '联系我们',
     // ── Hero ──
     hero_tag:     '见自己 · 见天地 · 见众生',
-    hero_title:   '板前现煲煲仔饭',
+    hero_title:   '煲仔宗师 现煲煲仔饭',
     hero_subtitle:'高品质年轻化的连锁煲仔饭品牌',
     hero_subtitle_en:'',
     hero_cta1:    '探索菜单',
@@ -248,7 +248,7 @@ const i18n = {
     nav_about:    'Our Story',
     nav_contact:  'Contact',
     hero_tag:     'Know Yourself · See the World · Serve All',
-    hero_title:   'Counter-side Freshly Cooked Clay Pot Rice',
+    hero_title:   'PotMaster: Freshly Cooked Clay Pot Rice',
     hero_subtitle:'Premium Young Chain Clay Pot Rice Brand',
     hero_subtitle_en:'',
     hero_cta1:    'Explore Menu',
@@ -486,7 +486,7 @@ const i18n = {
     nav_contact:  '聯繫我們',
     // ── Hero ──
     hero_tag:     '見自己 · 見天地 · 見眾生',
-    hero_title:   '板前現煲煲仔飯',
+    hero_title:   '煲仔宗師 現煲煲仔飯',
     hero_subtitle:'高品質年輕化的連鎖煲仔飯品牌',
     hero_subtitle_en:'',
     hero_cta1:    '探索菜單',

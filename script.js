@@ -749,6 +749,11 @@ function applyLang(lang) {
     toggle.querySelector('.lang-tw').classList.toggle('active-lang', lang === 'zh_tw');
   }
 
+  // 同步更新移动端侧边栏的语言高亮
+  document.querySelectorAll('.mobile-lang .lang-cn').forEach(el => el.classList.toggle('active-lang', lang === 'zh'));
+  document.querySelectorAll('.mobile-lang .lang-tw').forEach(el => el.classList.toggle('active-lang', lang === 'zh_tw'));
+  document.querySelectorAll('.mobile-lang .lang-en').forEach(el => el.classList.toggle('active-lang', lang === 'en'));
+
   document.documentElement.lang = lang;
 
   // 中文模式下隐藏功夫三境的英文副标题

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我们 Store Locations | PotMaster 煲仔宗师</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo.png" alt="煲仔宗师 POTMASTER" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">首页</a></li>
+        <li><a href="menu.html" class="nav-link" data-i18n="nav_menu">菜单</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav_about">品牌故事</a></li>
+        <li><a href="contact.html" class="nav-link active" data-i18n="nav_contact">联系我们</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-cn active-lang">中文(简体)</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-tw">中文(繁体)</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-en">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/contact-hero.jpg" alt="Store Locations" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content container">
+      
+      <h1 data-i18n="contact_hero_title">联系我们</h1>
+      <p data-i18n="contact_hero_sub">探索我们的门店 — Discover Our Locations</p>
+    </div>
+  </section>
+
+  <!-- STORE LOCATIONS -->
+  <section class="store-locations section-pad">
+    <div class="container">
+      <p class="section-badge" data-i18n="stores_badge">门店信息</p>
+      <h2 class="section-title" data-i18n="stores_title">我们的门店</h2>
+      <p class="section-sub" data-i18n="stores_sub">Our Store Locations</p>
+      
+      <div class="locations-grid">
+        <!-- Store 1 -->
+        <div class="location-card">
+          <div class="location-img">
+            <img src="images/store1.jpg" alt="Store 1" loading="lazy" />
+            <div class="location-badge" data-i18n="store1_badge">中国·广州</div>
+          </div>
+          <div class="location-info">
+            <h3 data-i18n="store1_name">宗师前传南站喜街店</h3>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="store1_address">门店地址：中国广州市番禺区南站喜街A6栋二楼</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <span data-i18n="store1_date">营业时间：10:00-22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store 2 -->
+        <div class="location-card">
+          <div class="location-img">
+            <img src="images/store2.png" alt="Store 2" loading="lazy" />
+            <div class="location-badge" data-i18n="store2_badge">中国·广州</div>
+          </div>
+          <div class="location-info">
+            <h3 data-i18n="store2_name">煲仔宗师番禺天河城店</h3>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="store2_address">门店地址：中国广州市番禺天河城B区三层333-334铺</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <span data-i18n="store2_date">营业时间：10:00-22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Store 3 -->
+        <div class="location-card">
+          <div class="location-img">
+            <img src="images/store3.png" alt="Store 3" loading="lazy" />
+            <div class="location-badge" data-i18n="store3_badge">中国·广州</div>
+          </div>
+          <div class="location-info">
+            <h3 data-i18n="store3_name">煲仔宗师番禺K11店</h3>
+            <div class="location-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-i18n="store3_address">门店地址：中国广州市番禺K11负一层B138号铺</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <span data-i18n="store3_date">营业时间：10:00-22:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="contact-info section-pad bg-dark">
+    <div class="container">
+      <p class="section-badge" data-i18n="ci_badge">联系方式</p>
+      <h2 class="section-title light" data-i18n="ci_title">联系我们</h2>
+      <p class="section-sub light" data-i18n="ci_sub">Get in Touch</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-phone"></i></div>
+          <h4 data-i18n="ci_phone_title">服务热线</h4>
+          <p>+86 020-8883-4737</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <h4 data-i18n="ci_email_title">电子邮箱</h4>
+          <p>csr@potmasterofficial.com</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fab fa-weixin"></i></div>
+          <h4 data-i18n="ci_wechat_title">微信公众号</h4>
+          <p class="clickable-text" onclick="showWechatQR()">煲仔宗师 PotMaster</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fab fa-instagram"></i></div>
+          <h4 data-i18n="ci_weibo_title">官方小红书</h4>
+          <p class="clickable-text" data-i18n="ci_weibo_desc" onclick="showQRCode()">煲仔宗师官方账号</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO --></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-cn">煲仔宗师</span>
+        <span class="logo-en">POTMASTER</span>
+        <p data-i18n="footer_tagline">功夫即哲学 · Kung Fu as Philosophy</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="nav_home">首页</a>
+        <a href="menu.html" data-i18n="nav_menu">菜单</a>
+        <a href="about.html" data-i18n="nav_about">品牌故事</a>
+        <a href="contact.html" data-i18n="nav_contact">联系我们</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2025 PotMaster 煲仔宗师. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- QR Code Modal -->
+  <div id="qrModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeQRCode()">&times;</span>
+      <h3 id="qrTitle"></h3>
+      <img id="qrImage" src="" alt="二维码" style="max-width: 100%; border-radius: 8px;">
+    </div>
+  </div>
+
+  <script>
+  function showQRCode() {
+    document.getElementById('qrTitle').textContent = '煲仔宗师官方账号';
+    document.getElementById('qrImage').src = 'dishes/小红书.jpg';
+    document.getElementById('qrModal').style.display = 'flex';
+  }
+  function showWechatQR() {
+    document.getElementById('qrTitle').textContent = '煲仔宗师 PotMaster';
+    document.getElementById('qrImage').src = 'dishes/公众号.jpg';
+    document.getElementById('qrModal').style.display = 'flex';
+  }
+  function closeQRCode() {
+    document.getElementById('qrModal').style.display = 'none';
+  }
+  window.onclick = function(event) {
+    var modal = document.getElementById('qrModal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

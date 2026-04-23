@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>菜单 Menu | PotMaster 煲仔宗师</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="logo.png" alt="煲仔宗师 POTMASTER" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">首页</a></li>
+        <li><a href="menu.html" class="nav-link active" data-i18n="nav_menu">菜单</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav_about">品牌故事</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">加盟合作</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span class="lang-cn active-lang">中文(简体)</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-tw">中文(繁体)</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-en">EN</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/menu-hero.png" alt="Menu" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="page-hero-content container">
+      <p class="hero-tag" data-i18n="menu_hero_tag">见天地 · See the World</p>
+      <h1 data-i18n="menu_hero_title">菜单 Menu</h1>
+      <p data-i18n="menu_hero_sub">海纳百川，以煲仔演绎天下风味</p>
+    </div>
+  </section>
+
+  <!-- MENU TABS -->
+  <section class="menu-section section-pad">
+    <div class="container">
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-tab="popular" data-i18n="tab_popular" onclick="showMenuTab('popular')">人气系列</button>
+        <button class="tab-btn" data-tab="classic" data-i18n="tab_classic" onclick="showMenuTab('classic')">经典系列</button>
+        <button class="tab-btn" data-tab="flavor" data-i18n="tab_flavor" onclick="showMenuTab('flavor')">风味系列</button>
+        <button class="tab-btn" data-tab="innovate" data-i18n="tab_innovate" onclick="showMenuTab('innovate')">创新系列</button>
+        <button class="tab-btn" data-tab="dimsum" data-i18n="tab_dimsum" onclick="showMenuTab('dimsum')">点心系列</button>
+        <button class="tab-btn" data-tab="soup" data-i18n="tab_soup" onclick="showMenuTab('soup')">靓汤系列</button>
+        <button class="tab-btn" data-tab="drink" data-i18n="tab_drink" onclick="showMenuTab('drink')">饮品系列</button>
+      </div>
+
+      <!-- 人气系列 -->
+      <div class="tab-content active" id="tab-popular">
+        <div class="tab-header">
+          <h2 data-i18n="tab_popular_title">人气产品系列</h2>
+          <p data-i18n="tab_popular_sub">Popular Product Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/sixi.jpg" alt="腊味四喜煲仔饭" loading="lazy" />
+              <span class="menu-badge" data-i18n="badge_hot">热销</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_p1_name">腊味四喜煲仔饭</h3>
+                <p class="en-name">Four Happiness Preserved Meat Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_p1_desc">广式古法纯手工腊味：腊肉、腊肠；上等排骨、鸡肉，自然风干，香味浓郁，醇厚独特。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/larou-huaji.jpg" alt="腊肠滑鸡煲仔饭" loading="lazy" />
+              <span class="menu-badge" data-i18n="badge_hot">热销</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_p2_name">腊肠滑鸡煲仔饭</h3>
+                <p class="en-name">Sausage & Silky Chicken Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_p2_desc">优选37比例古法手工腊肠，外皮脆嫩，肉质紧实；专供基地180天清远走地鸡，入口弹嫩，鸡味十足。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 经典系列 -->
+      <div class="tab-content" id="tab-classic">
+        <div class="tab-header">
+          <h2 data-i18n="tab_classic_title">经典产品系列</h2>
+          <p data-i18n="tab_classic_sub">Classic Product Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/jingdian-larou.jpg" alt="经典腊味煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c1_name">经典腊味煲仔饭</h3>
+                <p class="en-name">Classic Preserved Meat Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c1_desc">腊味滋滋渗米香，煲出焦香锅巴，一口暖到心尖。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/xianggu-huaji.jpg" alt="香菇滑鸡煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c2_name">香菇滑鸡煲仔饭</h3>
+                <p class="en-name">Mushroom & Silky Chicken Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c2_desc">干香菇吸满鲜鸡汤，鸡腿肉滑嫩，米饭裹香锅巴脆。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/suanxiang-paigu.jpg" alt="蒜香排骨煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c3_name">蒜香排骨煲仔饭</h3>
+                <p class="en-name">Garlic Spare Ribs Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c3_desc">排骨裹满蒜香焖至鲜嫩多汁，米香锅巴脆，每口都够鲜够味。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/wodan-niurou.jpg" alt="窝蛋牛肉煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c4_name">窝蛋牛肉煲仔饭</h3>
+                <p class="en-name">Egg & Beef Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c4_desc">生态鸡蛋窝进热煲里，牛肉嫩、蛋流心，拌饭香到停不下。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/suanxiang-qiezi.jpg" alt="蒜香茄子煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c5_name">蒜香茄子煲仔饭</h3>
+                <p class="en-name">Garlic Eggplant Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c5_desc">素食者福音！蒜末和茄子被热油激出冲天香气，锅巴滋滋作响，每一口都超满足。</p>
+            </div>
+          </div>
+          <!-- 马蹄鱿鱼肉饼煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/mati-youyu.jpg" alt="马蹄鱿鱼肉饼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c6_name">马蹄鱿鱼肉饼煲仔饭</h3>
+                <p class="en-name">Water Chestnut Squid Pork Cake Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c6_desc">爽脆马蹄遇上鲜Q鱿鱼，肉饼厚实多汁，焦香锅巴尽显地道粤味。</p>
+            </div>
+          </div>
+          <!-- 经典三拼煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/sanpin.jpg" alt="经典三拼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c7_name">经典三拼煲仔饭</h3>
+                <p class="en-name">Classic Three Treasures Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c7_desc">广式三宝齐聚，腊味醇厚、排骨鲜嫩、滑鸡多汁，口口皆是经典。</p>
+            </div>
+          </div>
+          <!-- 凤爪排骨煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/fengzhao-paigu.png" alt="凤爪排骨煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--classic" data-i18n="badge_classic">经典</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_c8_name">凤爪排骨煲仔饭</h3>
+                <p class="en-name">Phoenix Claw & Spare Rib Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_c8_desc">软糯凤爪搭配鲜嫩排骨，浓郁酱汁渗入焦脆米饭，双重滋味倍过瘾。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 风味系列 -->
+      <div class="tab-content" id="tab-flavor">
+        <div class="tab-header">
+          <h2 data-i18n="tab_flavor_title">风味产品系列</h2>
+          <p data-i18n="tab_flavor_sub">Flavor Product Series — Global Inspired</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/wuhua-paigu.jpg" alt="澳门虾酱花肉煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f1_name">澳门虾酱花肉煲仔饭</h3>
+                <p class="en-name">Macau Shrimp Paste Pork Belly Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f1_desc">澳门虾酱拌三层花肉，肉香渗饭超咸鲜，锅巴脆不腻。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/chizhi-paigu.jpg" alt="阳江豆豉排骨煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f2_name">阳江豆豉排骨煲仔饭</h3>
+                <p class="en-name">Yangjiang Black Bean Spareribs Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f2_desc">阳江豆豉入煲，排骨软嫩脱骨，米饭吸香超回甘。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/hei-hujiao-niurou.jpg" alt="海南黑胡椒牛肉煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f3_name">海南黑胡椒牛肉煲仔饭</h3>
+                <p class="en-name">Hainan Black Pepper Beef Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f3_desc">海南黑胡椒爆香，鲜切牛肉嫩弹，煲饭辛香超够劲。</p>
+            </div>
+          </div>
+          <!-- 三门坡沙姜嫩鸡煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/shajiang-naiji.jpg" alt="三门坡沙姜嫩鸡煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f4_name">三门坡沙姜嫩鸡煲仔饭</h3>
+                <p class="en-name">Sanmenpo Sand Ginger Chicken Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f4_desc">选用三门坡沙姜，辛香四溢，鸡肉嫩滑多汁，锅气十足。</p>
+            </div>
+          </div>
+          <!-- 四川烧椒牛肉煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/shaojiao-niurou.png" alt="四川烧椒牛肉煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f5_name">四川烧椒牛肉煲仔饭</h3>
+                <p class="en-name">Sichuan Roasted Chili Beef Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f5_desc">选用特制烧椒鲜辣劲爽，牛肉片片滑嫩，川粤风味在锅巴间完美融合。</p>
+            </div>
+          </div>
+          <!-- 潮汕豆酱银鳕鱼煲仔饭 -->
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/chaoshan-yinxue.jpg" alt="潮汕豆酱银鳕鱼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--flavor" data-i18n="badge_flavor">风味</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_f6_name">潮汕豆酱银鳕鱼煲仔饭</h3>
+                <p class="en-name">Chaoshan Soy Bean Silver Cod Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_f6_desc">普宁豆酱激发出银鳕鱼的丰腴，肉质如奶油般丝滑，鲜咸地道。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 创新系列 -->
+      <div class="tab-content" id="tab-innovate">
+        <div class="tab-header">
+          <h2 data-i18n="tab_innovate_title">创新产品系列</h2>
+          <p data-i18n="tab_innovate_sub">Innovative Product Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/zsh-songlu.jpg" alt="芝士黑松露煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i1_name">芝士黑松露煲仔饭</h3>
+                <p class="en-name">Cheese Black Truffle Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i1_desc">浓醇奶油裹挟顶级黑松露香气，融入米饭化作咸鲜奶香，与菌菇奢华交织回味。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/manyu.jpg" alt="日式轻奢鳗鱼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i2_name">日式轻奢鳗鱼煲仔饭</h3>
+                <p class="en-name">Japanese Premium Eel Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i2_desc">精选厚切鳗鱼，肉质肥美，搭配秘制蒲烧酱与焦香锅巴，口感饱满。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/zhishi-angesi.jpg" alt="芝士安格斯牛肉煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i3_name">芝士安格斯牛肉煲仔饭</h3>
+                <p class="en-name">Angus Beef & Mozzarella Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i3_desc">安格斯牛肉鲜嫩爆汁，盖上满满一层拉丝的马苏里拉芝士，锅巴吸饱肉汁与奶香。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/roubing-baozi.jpg" alt="手打安格斯牛肉饼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i4_name">手打安格斯牛肉饼煲仔饭</h3>
+                <p class="en-name">Hand-Pressed Angus Beef Patty Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i4_desc">精选安格斯牛肉，手打Q弹劲道，肉饼鲜美爆汁，米香肉香交织入魂。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/diaolong-baozi.png" alt="吊龙牛肉鲜鱿煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i5_name">吊龙牛肉鲜鱿煲仔饭</h3>
+                <p class="en-name">Diao Long Beef & Fresh Squid Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i5_desc">鲜甜吊龙肉质软糯，搭配爽弹鲜鱿，油润鲜香渗入焦脆锅巴，满口生鲜。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/wufulinmen-baoyu.png" alt="五福临门鲍鱼煲仔饭" loading="lazy" />
+              <span class="menu-badge menu-badge--new" data-i18n="badge_innovate">创新</span>
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_i6_name">五福临门鲍鱼煲仔饭</h3>
+                <p class="en-name">Five Blessings Abalone Clay Pot Rice</p>
+              </div>
+              <p data-i18n="m_i6_desc">鲍鱼Q弹、腊味醇厚、鸡肉排骨滑嫩，五味合一，口口皆是富贵满足。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 点心系列 -->
+      <div class="tab-content" id="tab-dimsum">
+        <div class="tab-header">
+          <h2 data-i18n="tab_dimsum_title">点心产品系列</h2>
+          <p data-i18n="tab_dimsum_sub">Dim Sum Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/虾饺.JPG" alt="招牌虾饺皇" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_d1_name">招牌虾饺皇</h3>
+                <p class="en-name">Signature Shrimp Dumplings</p>
+              </div>
+              <p data-i18n="m_d1_desc">透明皮里裹着呼之欲出的整颗虾仁，爽滑鲜甜。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/凤爪.JPG" alt="百合酱蒸凤爪" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_d2_name">百合酱蒸凤爪</h3>
+                <p class="en-name">Steamed Chicken Feet with Bean Sauce</p>
+              </div>
+              <p data-i18n="m_d2_desc">经典的广式早茶味，凤爪酥软红亮，酱汁浓稠，老少皆宜。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/排骨.JPG" alt="豉汁蒸排骨" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_d3_name">豉汁蒸排骨</h3>
+                <p class="en-name">Steamed Ribs with Black Bean Sauce</p>
+              </div>
+              <p data-i18n="m_d3_desc">豆豉醇香入髓，排骨嫩而不韧，色泽洁白，尽显纯正粤味。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/烧卖.JPG" alt="鲜虾蟹籽烧卖" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_d4_name">鲜虾蟹籽烧卖</h3>
+                <p class="en-name">Shrimp & Crab Roe Siu Mai</p>
+              </div>
+              <p data-i18n="m_d4_desc">黄薄皮包裹丰盈肉馅，顶缀饱满蟹籽，鲜爽弹牙，层次丰富。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/瑞士汁鸡翅.png" alt="瑞士汁鸡翼" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_d5_name">瑞士汁鸡翼</h3>
+                <p class="en-name">Swiss Sauce Chicken Wings</p>
+              </div>
+              <p data-i18n="m_d5_desc">浓稠豉油调配出经典瑞士汁，鸡翅色泽深亮，软糯香甜，小朋友的最爱。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 靓汤系列 -->
+      <div class="tab-content" id="tab-soup">
+        <div class="tab-header">
+          <h2 data-i18n="tab_soup_title">靓汤产品系列</h2>
+          <p data-i18n="tab_soup_sub">Soup Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/西洋菜.JPG" alt="西洋菜南北杏陈肾汤" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_s1_name">西洋菜南北杏陈肾汤</h3>
+                <p class="en-name">Watercress & Apricot Kernel Soup</p>
+              </div>
+              <p data-i18n="m_s1_desc">西洋菜清香，陈肾咸鲜适口，加入南北杏，温润止咳且回甘。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/鸡.JPG" alt="鲜人参煲老鸡汤" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_s2_name">鲜人参煲老鸡汤</h3>
+                <p class="en-name">Fresh Ginseng & Old Chicken Soup</p>
+              </div>
+              <p data-i18n="m_s2_desc">鲜参之甘，叠加老鸡之鲜，温润不燥，尽享自然本味。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 饮品系列 -->
+      <div class="tab-content" id="tab-drink">
+        <div class="tab-header">
+          <h2 data-i18n="tab_drink_title">饮品产品系列</h2>
+          <p data-i18n="tab_drink_sub">Beverage Series</p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/鸭.JPG" alt="鸭屎香柠檬茶" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_dr1_name">鸭屎香柠檬茶</h3>
+                <p class="en-name">Yashi Xiang Lemon Tea</p>
+              </div>
+              <p data-i18n="m_dr1_desc">潮汕名丛碰撞香水柠檬，兰香悠长，茶韵与酸爽神级融合。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/茉莉.JPG" alt="茉莉香柠柠檬茶" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_dr2_name">茉莉香柠柠檬茶</h3>
+                <p class="en-name">Jasmine Lemon Tea</p>
+              </div>
+              <p data-i18n="m_dr2_desc">茉莉花香轻盈入喉，与青柠酸爽浪漫邂逅，清雅解暑不甜腻。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/葡萄.JPG" alt="爆柠葡萄柠檬茶" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_dr3_name">爆柠葡萄柠檬茶</h3>
+                <p class="en-name">Grape Lemon Tea</p>
+              </div>
+              <p data-i18n="m_dr3_desc">饱满多肉葡萄果肉，撞上暴力手打柠檬，紫色冰爽，满口鲜甜。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/芭乐.JPG" alt="芭乐柠檬茶" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_dr4_name">芭乐柠檬茶</h3>
+                <p class="en-name">Guava Lemon Tea</p>
+              </div>
+              <p data-i18n="m_dr4_desc">粉嫩芭乐自带奶油香气，融合鲜柠爽感，酸甜柔和，细腻清爽。</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="dishes/新鲜.JPG" alt="鲜萃Lemonade" loading="lazy" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3 data-i18n="m_dr5_name">鲜萃Lemonade</h3>
+                <p class="en-name">Fresh Squeezed Lemonade</p>
+              </div>
+              <p data-i18n="m_dr5_desc">纯粹柠檬原汁鲜萃，冰爽比例恰到好处，最简单的极致解渴。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cta-strip">
+    <div class="container cta-strip-inner">
+      <div class="cta-strip-text">
+        <h2 data-i18n="cta_title">品味匠心本源</h2>
+        <p data-i18n="cta_sub">不只是味蕾的享受，更是百炼成钢的烹饪哲学。深入了解"宗师"背后的故事，读懂这一口焦香的温度。</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta_btn">联系我们</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-cn">煲仔宗师</span>
+        <span class="logo-en">POTMASTER</span>
+        <p data-i18n="footer_tagline">功夫即哲学 · Kung Fu as Philosophy</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html" data-i18n="nav_home">首页</a>
+        <a href="menu.html" data-i18n="nav_menu">菜单</a>
+        <a href="about.html" data-i18n="nav_about">品牌故事</a>
+        <a href="contact.html" data-i18n="nav_contact">加盟合作</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 PotMaster 煲仔宗师. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

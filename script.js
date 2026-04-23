@@ -758,8 +758,7 @@ function applyLang(lang) {
 }
 
 document.addEventListener('click', e => {
-  const toggle = document.getElementById('langToggle');
-  if (!toggle || !toggle.contains(e.target)) return;
+  // 语言切换（桌面端和移动端通用）
   if (e.target.classList.contains('lang-cn')) {
     applyLang('zh');
   } else if (e.target.classList.contains('lang-tw')) {

@@ -210,6 +210,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .lang-divider { color: rgba(255,255,255,0.25); }
 .active-lang { color: var(--gold); }
 .lang-cn, .lang-en, .lang-tw { cursor: pointer; }
+.mobile-lang { display: none; }
 
 .hamburger {
   display: none;
@@ -1364,57 +1365,95 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .about-us-strengths { grid-template-columns: 1fr; }
   .about-us-vision { flex-direction: column; gap: 1rem; text-align: center; }
 
-  /* 移动端导航 - 汉堡按钮 */
+  /* 移动端导航 - 整体结构 */
+  .navbar { padding: 0.8rem 0; }
+  .nav-inner { gap: 1rem; }
+  .brand-logo { flex-shrink: 0; }
+  .logo-img { height: 32px; }
+
+  /* 隐藏桌面端语言切换，显示汉堡按钮 */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+  }
+  .lang-toggle { display: none; }
   .hamburger {
     display: flex;
-    position: relative;
-    z-index: 1002;
+    flex-direction: column;
+    gap: 5px;
+    width: 28px;
+    padding: 4px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px;
+    z-index: 1003;
   }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-  /* 移动端导航 - 侧边栏菜单 */
+  /* 移动端导航 - 侧边栏菜单（覆盖桌面样式） */
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: min(280px, 80vw);
+    width: 280px;
     height: 100vh;
-    background: rgba(13,13,13,0.98);
+    background: rgba(13,13,13,0.97);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 5rem 2rem 2rem;
-    gap: 1.2rem;
+    align-items: stretch;
+    padding: 5rem 1.5rem 2rem;
+    gap: 0;
+    margin: 0;
     transition: right 0.35s ease;
-    z-index: 1001;
-    overflow-y: auto;
+    z-index: 1002;
+    list-style: none;
   }
   .nav-links.open { right: 0; }
 
   /* 移动端导航 - 链接样式 */
-  .nav-link {
-    font-size: 1.05rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(201,168,76,0.15);
-    width: 100%;
+  .nav-links .nav-link {
+    display: block;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+    color: rgba(255,255,255,0.9);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    text-decoration: none;
+    transition: color 0.2s, padding-left 0.2s;
+  }
+  .nav-links .nav-link:hover,
+  .nav-links .nav-link.active {
+    color: #C9A84C;
+    padding-left: 1rem;
   }
 
-  /* 移动端导航 - 语言切换放第二行 */
-  .nav-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    position: fixed;
-    bottom: 2rem;
-    left: 2rem;
-    z-index: 1003;
+  /* 移动端导航 - 语言切换（在菜单底部） */
+  .nav-links::after {
+    content: '';
+    display: block;
+    margin-top: 1.5rem;
   }
-  .lang-toggle {
-    font-size: 0.85rem;
+  .mobile-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
   }
+  .mobile-lang span { cursor: pointer; }
+  .mobile-lang span:hover,
+  .mobile-lang span.active-lang { color: #C9A84C; }
 
   .hero-title { font-size: clamp(2.5rem, 8vw, 3.5rem); }
   .hero-cta { flex-direction: column; align-items: flex-start; }

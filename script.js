@@ -203,7 +203,7 @@ const i18n = {
     // ── About Us ──
     about_us_badge: '关于我们',
     about_us_title: '煲仔宗师 PotMaster',
-    about_us_intro: '煲仔宗师 (PotMaster) 是由港资企业同熙商业科技控股有限公司倾力打造的高品质年轻化连锁煲仔饭品牌。',
+    about_us_intro: '煲仔宗师 (PotMaster) 是由广东同熙餐饮品牌管理有限公司倾力打造的高品质年轻化连锁煲仔饭品牌。',
     about_us_philosophy: '秉持"只要够用心，人人皆宗师"的品牌理念，在传承古法与现代创新之间寻得完美平衡。依托现代美学空间、创新板前现煲体验、匠心秘制出品以及专利AI智能煲仔炉的四大核心竞争力，我们正以前瞻性的视野重新定义中式快餐的品质高度。',
     about_vision_text: '未来品牌将扎根中国，走向世界，致力于成为全球连锁煲仔饭品类的头部品牌。',
     // ── About PSD ──
@@ -441,7 +441,7 @@ const i18n = {
     // ── About Us ──
     about_us_badge: 'About Us',
     about_us_title: 'PotMaster',
-    about_us_intro: 'PotMaster is a premium young chain clay pot rice brand, created by Hong Kong-invested Tongxi Commercial Technology Holdings Co., Ltd.',
+    about_us_intro: 'PotMaster is a premium young chain clay pot rice brand, created by Guangdong Tongxi Food & Beverage Brand Management Co., Ltd.',
     about_us_philosophy: 'Adhering to the brand philosophy "If you put your heart into it, everyone can be a master," we seek perfect balance between traditional craftsmanship and modern innovation. With four core competitive strengths — modern aesthetic space, innovative counter-side clay pot cooking experience, artisanal signature dishes, and patented AI smart clay pot stove — we are redefining the quality standard of Chinese fast food with forward-looking vision.',
     about_vision_text: 'Rooted in China, reaching the world, committed to becoming the leading global chain brand for clay pot rice.',
     // ── About PSD ──
@@ -678,7 +678,7 @@ const i18n = {
     // ── About Us ──
     about_us_badge: '關於我們',
     about_us_title: '煲仔宗師 PotMaster',
-    about_us_intro: '煲仔宗師 (PotMaster) 是由港資企業同熙商業科技控股有限公司傾力打造的高品質年輕化連鎖煲仔飯品牌。',
+    about_us_intro: '煲仔宗師 (PotMaster) 是由廣東同熙餐飲品牌管理有限公司傾力打造的高品質年輕化連鎖煲仔飯品牌。',
     about_us_philosophy: '秉持「只要夠用心，人人皆宗師」的品牌理唸，在傳承古法與現代創新之間尋得完美平衡。依託現代美學空間、創新版前現煲體驗、匠心秘製出品以及專利AI智能煲仔爐的四大核心競爭力，我們正以前瞻性的視野重新定義中式快餐的品質高度。',
     about_vision_text: '未來品牌將紮根中國，走向世界，致力於成為全球連鎖煲仔飯品類的頭部品牌。',
     // ── About PSD ──

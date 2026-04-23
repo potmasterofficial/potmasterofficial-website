@@ -1454,7 +1454,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   .hero { min-height: 100svh; }
   .hero-content { padding-top: 5rem; }
-  .hero-bg img { object-position: 70% center; }
+  .hero-bg img { object-position: 40% center; }
   .hero-title { font-size: clamp(3.5rem, 12vw, 5rem); }
   .hero-subtitle { font-size: 1rem; }
   .hero-cta { flex-direction: column; align-items: flex-start; gap: 1rem; }

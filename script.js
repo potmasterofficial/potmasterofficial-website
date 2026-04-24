@@ -794,7 +794,7 @@ if (hamburger && navLinks) {
 }
 
 // ── Scroll header ──────────────────────────────────
-const header = document.querySelector('.site-header');
+const header = document.querySelector('#navbar');
 let ticking = false;
 window.addEventListener('scroll', () => {
   if (!ticking) {

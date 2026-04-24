@@ -283,7 +283,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   display: block;
   margin-top: 0.5rem;
 }
-}
 .title-cn { color: var(--white); }
 .title-sep { color: var(--gold); margin: 0 0.4rem; }
 .title-en {
@@ -799,7 +798,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ABOUT US SECTION
    ==================================== */
 .about-us {
-  background: var(--cream);
+  background: var(--off-white);
 }
 .about-us-inner {
   max-width: 900px;
@@ -911,7 +910,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 5rem;
   align-items: center;
 }
-.about-intro-text { }
 .about-intro-text h2 { text-align: left; }
 .about-intro-text .section-sub { text-align: left; }
 .about-intro-text p {
@@ -1359,7 +1357,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ==================================== */
 @media (max-width: 1024px) {
   .three-realms { grid-template-columns: 1fr; }
-  .realm-card--mid { }
   .strengths-grid { grid-template-columns: repeat(2, 1fr); }
   .dishes-grid { grid-template-columns: repeat(2, 1fr); }
   .vision-inner { grid-template-columns: 1fr; gap: 3rem; }

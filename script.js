@@ -11,7 +11,7 @@ const i18n = {
     nav_contact:  '联系我们',
     // ── Hero ──
     hero_tag:     '见自己 · 见天地 · 见众生',
-    hero_title:   '<span>煲仔宗师</span><br><span class="hero-title-sub">现煲煲仔饭</span>',
+    hero_title:   '<span>煲仔宗师</span><br><span class="hero-title-sub">PotMaster</span>',
     hero_subtitle:'高品质年轻化的连锁煲仔饭品牌',
     hero_subtitle_en:'',
     hero_cta1:    '探索菜单',
@@ -250,7 +250,7 @@ const i18n = {
     nav_about:    'Our Story',
     nav_contact:  'Contact',
     hero_tag:     'Know Yourself · See the World · Serve All',
-    hero_title:   '<span>PotMaster</span><br><span class="hero-title-sub">Freshly Cooked Clay Pot Rice</span>',
+    hero_title:   '<span>PotMaster</span>',
     hero_subtitle:'Premium Young Chain Clay Pot Rice Brand',
     hero_subtitle_en:'',
     hero_cta1:    'Explore Menu',
@@ -490,7 +490,7 @@ const i18n = {
     nav_contact:  '聯繫我們',
     // ── Hero ──
     hero_tag:     '見自己 · 見天地 · 見眾生',
-    hero_title:   '<span>煲仔宗師</span><br><span class="hero-title-sub">現煲煲仔飯</span>',
+    hero_title:   '<span>煲仔宗師</span><br><span class="hero-title-sub">PotMaster</span>',
     hero_subtitle:'高品質年輕化的連鎖煲仔飯品牌',
     hero_subtitle_en:'',
     hero_cta1:    '探索菜單',

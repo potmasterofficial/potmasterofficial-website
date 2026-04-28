@@ -8,6 +8,7 @@ const i18n = {
     nav_home:    '首页',
     nav_menu:     '菜单',
     nav_about:    '品牌故事',
+    nav_stores:   '门店信息',
     nav_contact:  '联系我们',
     // ── Hero ──
     hero_tag:     '见自己 · 见天地 · 见众生',
@@ -229,11 +230,17 @@ const i18n = {
     // ── Contact ──
     contact_hero_tag: 'See the World · 见天地',
     contact_hero_title: '联系我们',
-    contact_hero_sub: 'Explore Our Locations 探索我们的门店',
+    contact_hero_sub: 'Contact Us · 更多资讯请联系我们',
     // Store
     stores_badge: '门店信息',
+    stores_hero_title: '门店信息',
+    stores_hero_sub: '探索我们的门店 — Discover Our Locations',
     stores_title: '我们的门店',
     stores_sub:   '',
+    stores_cta_badge: '更多咨询',
+    stores_cta_title: '了解更多',
+    stores_cta_desc: '如需了解更多门店信息或有任何疑问，欢迎联系我们。',
+    stores_cta_btn: '联系我们',
     store1_badge: '中国·广州', store1_name: '宗师前传南站喜街店', store1_address: '门店地址：中国广州市番禺区南站喜街A6栋二楼', store1_date: '营业时间：10:00-22:00',
     store2_badge: '中国·广州', store2_name: '煲仔宗师番禺天河城店', store2_address: '门店地址：中国广州市番禺天河城B区三层333-334铺', store2_date: '营业时间：10:00-22:00',
     store3_badge: '中国·广州', store3_name: '煲仔宗师番禺K11店', store3_address: '门店地址：中国广州市番禺K11负一层B138号铺', store3_date: '营业时间：10:00-22:00',
@@ -248,6 +255,7 @@ const i18n = {
     nav_home:    'Home',
     nav_menu:     'Menu',
     nav_about:    'Our Story',
+    nav_stores:   'Locations',
     nav_contact:  'Contact',
     hero_tag:     'Know Yourself · See the World · Serve All',
     hero_title:   '<span>PotMaster</span>',
@@ -469,10 +477,16 @@ const i18n = {
 
     contact_hero_tag: 'See the World',
     contact_hero_title: 'Contact Us',
-    contact_hero_sub: 'Explore Our Locations',
+    contact_hero_sub: 'Get in Touch With Us',
     stores_badge: 'Store Info',
+    stores_hero_title: 'Store Locations',
+    stores_hero_sub: 'Explore Our Locations',
     stores_title: 'Our Locations',
     stores_sub:   '',
+    stores_cta_badge: 'Learn More',
+    stores_cta_title: 'Get in Touch',
+    stores_cta_desc: 'For more store information or any questions, feel free to contact us.',
+    stores_cta_btn: 'Contact Us',
     store1_badge: 'China · Guangzhou', store1_name: 'MASTER PREQUEL @GUANGZHOU SOUTH STATION HEYBLOCK', store1_address: 'Store Address: Building A6, 2/F, Guangzhou South Station HeyBlock, Panyu, Guangzhou, China', store1_date: 'Business Hours: 10:00-22:00',
     store2_badge: 'China · Guangzhou', store2_name: 'POTMASTER @PANYU TEEMALL', store2_address: 'Store Address: Zone B, 3/F, Shop 333-334, Panyu Teemall, Guangzhou, China', store2_date: 'Business Hours: 10:00-22:00',
     store3_badge: 'China · Guangzhou', store3_name: 'POTMASTER @PANYU K11', store3_address: 'Store Address: Shop B138, B1/F, Panyu K11, Guangzhou, China', store3_date: 'Business Hours: 10:00-22:00',
@@ -487,6 +501,7 @@ const i18n = {
     nav_home:    '首頁',
     nav_menu:     '菜單',
     nav_about:    '品牌故事',
+    nav_stores:   '門市資訊',
     nav_contact:  '聯繫我們',
     // ── Hero ──
     hero_tag:     '見自己 · 見天地 · 見眾生',
@@ -708,11 +723,17 @@ const i18n = {
     // ── Contact ──
     contact_hero_tag: 'See the World · 見天地',
     contact_hero_title: '聯繫我們',
-    contact_hero_sub: 'Explore Our Locations 探索我們的門店',
+    contact_hero_sub: 'Contact Us · 更多資訊請聯繫我們',
     // Store
-    stores_badge: '門店資訊',
-    stores_title: '我們的門店',
+    stores_badge: '門市資訊',
+    stores_hero_title: '門市資訊',
+    stores_hero_sub: '探索我們的門市 — Discover Our Locations',
+    stores_title: '我們的門市',
     stores_sub:   '',
+    stores_cta_badge: '更多咨詢',
+    stores_cta_title: '了解更多',
+    stores_cta_desc: '如需了解更多門市資訊或有任何疑問，歡迎聯繫我們。',
+    stores_cta_btn: '聯繫我們',
     store1_badge: '中國·廣州', store1_name: '宗師前傳南站喜街店', store1_address: '門店地址：中國廣州市番禺區南站喜街A6棟二樓', store1_date: '營業時間：10:00-22:00',
     store2_badge: '中國·廣州', store2_name: '煲仔宗師番禺天河城店', store2_address: '門店地址：中國廣州市番禺天河城B區三層333-334鋪', store2_date: '營業時間：10:00-22:00',
     store3_badge: '中國·廣州', store3_name: '煲仔宗師番禺K11店', store3_address: '門店地址：中國廣州市番禺K11負一層B138號鋪', store3_date: '營業時間：10:00-22:00',
@@ -782,15 +803,25 @@ document.addEventListener('click', e => {
 // ── Mobile nav ─────────────────────────────────────
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
 if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+    if (navOverlay) navOverlay.classList.toggle('active');
   });
   document.addEventListener('click', e => {
     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
       navLinks.classList.remove('open');
+      if (navOverlay) navOverlay.classList.remove('active');
     }
   });
+  // 点击遮罩层关闭菜单
+  if (navOverlay) {
+    navOverlay.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navOverlay.classList.remove('active');
+    });
+  }
 }
 
 // ── Scroll header ──────────────────────────────────

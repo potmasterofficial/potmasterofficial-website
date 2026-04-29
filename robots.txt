@@ -1,0 +1,22 @@
+# Robots.txt for 煲仔宗师 PotMaster
+# https://www.potmasterofficial.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.potmasterofficial.com/sitemap.xml
+
+# 百度特殊规则
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Google特殊规则
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# 禁止抓取目录（根据需要调整）
+# Disallow: /admin/
+# Disallow: /private/

@@ -35,4 +35,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- 隐私政策 -->
+  <url>
+    <loc>https://www.potmasterofficial.com/privacy.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

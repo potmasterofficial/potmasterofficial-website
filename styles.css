@@ -605,6 +605,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 2rem;
   flex-wrap: wrap;
 }
+.cta-strip-text {
+  flex: 1;
+  min-width: 200px;
+}
 .cta-strip-text h2 {
   font-family: var(--font-display);
   font-size: 1.8rem;
@@ -613,6 +617,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 0.3rem;
 }
 .cta-strip-text p { font-size: 0.95rem; color: rgba(0,0,0,0.65); }
+.cta-strip-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .cta-strip .btn-primary {
   background: var(--black);
   color: var(--white);
@@ -621,6 +630,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .cta-strip .btn-primary:hover {
   background: var(--dark-mid);
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.cta-strip .btn-secondary {
+  background: transparent;
+  color: var(--black);
+  border: 2px solid var(--black);
+  flex-shrink: 0;
+}
+.cta-strip .btn-secondary:hover {
+  background: var(--black);
+  color: var(--gold);
 }
 
 /* ---- FOOTER ---- */
@@ -1378,7 +1397,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .about-us-vision { flex-direction: column; gap: 1rem; text-align: center; padding: 1.5rem; }
 
   /* 移动端导航 - 整体结构 */
-  .navbar { padding: 0.8rem 0; }
+  .navbar {
+    padding: 0.8rem 0;
+    z-index: 1005;
+  }
   .nav-inner { gap: 1rem; }
   .brand-logo { flex-shrink: 0; }
   .logo-img { height: 32px; }
@@ -1402,6 +1424,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     align-items: center;
     gap: 1rem;
     margin-left: auto;
+    position: relative;
+    z-index: 1006;
   }
   .lang-toggle { display: none; }
   .hamburger {
@@ -1414,8 +1438,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     border: 1px solid rgba(201,168,76,0.3);
     border-radius: 8px;
     cursor: pointer;
-    z-index: 1003;
+    z-index: 1006;
     transition: background 0.3s;
+    position: relative;
   }
   .hamburger:hover {
     background: rgba(201,168,76,0.25);
@@ -1436,7 +1461,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     right: -100%;
     width: 280px;
     height: 100vh;
-    background: rgba(13,13,13,0.97);
+    background: rgba(13,13,13,0.98);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1444,12 +1469,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     gap: 0;
     margin: 0;
     transition: right 0.35s ease;
-    z-index: 1002;
+    z-index: 1004;
     list-style: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .nav-links.open { right: 0; }
 
-  /* 移动端导航 - 链接样式 */
+  /* 移动端导航 - 确保链接可点击 */
   .nav-links .nav-link {
     display: block;
     font-size: 1.1rem;
@@ -1457,12 +1484,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     color: rgba(255,255,255,0.9);
     border-bottom: 1px solid rgba(201,168,76,0.2);
     text-decoration: none;
-    transition: color 0.2s, padding-left 0.2s;
+    transition: color 0.2s, padding-left 0.2s, background-color 0.2s;
+    pointer-events: auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 48px;
+    line-height: 48px;
   }
   .nav-links .nav-link:hover,
+  .nav-links .nav-link:active,
   .nav-links .nav-link.active {
     color: #C9A84C;
     padding-left: 1rem;
+    background-color: rgba(201,168,76,0.08);
   }
 
   /* 移动端导航 - 语言切换（在菜单底部） */
@@ -1478,9 +1512,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     padding: 0.5rem;
     font-size: 0.9rem;
     color: rgba(255,255,255,0.7);
+    pointer-events: auto;
+    min-height: 48px;
   }
-  .mobile-lang span { cursor: pointer; }
+  .mobile-lang span { cursor: pointer; padding: 0.5rem; }
   .mobile-lang span:hover,
+  .mobile-lang span:active,
   .mobile-lang span.active-lang { color: #C9A84C; }
 
   .hero { min-height: 100svh; }
@@ -1499,6 +1536,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .locations-grid { grid-template-columns: 1fr; }
   .hours-grid { grid-template-columns: 1fr; }
   .cta-strip-inner { flex-direction: column; text-align: center; gap: 1.5rem; }
+  .cta-strip-buttons { justify-content: center; }
   .form-row { grid-template-columns: 1fr; }
   .franchise-form { padding: 2rem 1.5rem; }
   .realm-detail-item { flex-direction: column; gap: 1rem; }
@@ -1546,6 +1584,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   /* 移动端按钮 - 优化触摸体验 */
   .btn { padding: 0.9rem 1.8rem; font-size: 0.88rem; }
   .cta-strip .btn { width: 100%; justify-content: center; }
+  .cta-strip-buttons { width: 100%; }
+  .cta-strip-buttons .btn { flex: 1; }
 
   /* 移动端表单 - 优化输入框 */
   .franchise-form { padding: 1.5rem 1rem; }

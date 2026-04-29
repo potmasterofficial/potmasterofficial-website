@@ -23,6 +23,7 @@ const i18n = {
     cta_title: '品味匠心本源',
     cta_sub: '不只是味蕾的享受，更是百炼成钢的烹饪哲学。深入了解"宗师"背后的故事，读懂这一口焦香的温度。',
     cta_btn: '联系我们',
+    cta_stores_btn: '门店信息',
     // ── Three Realms ──
     phil_badge: '品牌哲学',
     phil_title: '以"功夫三境"<br>构建品牌内核',
@@ -268,6 +269,7 @@ const i18n = {
     cta_title: 'Taste the Origin of Craftsmanship',
     cta_sub: 'Beyond the palate — it\'s a philosophy forged through countless hours. Discover the story behind "The Master" and understand the warmth in every crispy bite.',
     cta_btn: 'Contact Us',
+    cta_stores_btn: 'Store Locations',
     phil_badge: 'Brand Philosophy',
     phil_title: 'Building the Brand Core<br>with the "Kung Fu Three Realms"',
     phil_title_en: 'Establishing the brand core value<br>with the "Kung Fu Three Realms"',
@@ -515,6 +517,7 @@ const i18n = {
     cta_title: '品味匠心本源',
     cta_sub: '不只是味蕾的享受，更是百煉成鋼的烹飪哲學。深入了解「宗師」背后的故事，讀懂這一口焦香的溫度。',
     cta_btn: '聯繫我們',
+    cta_stores_btn: '門市資訊',
     // ── Three Realms ──
     phil_badge: '品牌哲學',
     phil_title: '以「功夫三境」<br>構建品牌內核',
@@ -804,24 +807,44 @@ document.addEventListener('click', e => {
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 const navOverlay = document.getElementById('navOverlay');
+
+function closeMobileNav() {
+  if (navLinks) navLinks.classList.remove('open');
+  if (navOverlay) navOverlay.classList.remove('active');
+  if (hamburger) hamburger.classList.remove('open');
+}
+
 if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
     if (navOverlay) navOverlay.classList.toggle('active');
   });
+
+  // 点击导航链接后关闭菜单
+  navLinks.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileNav();
+    });
+  });
+
   document.addEventListener('click', e => {
     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-      navLinks.classList.remove('open');
-      if (navOverlay) navOverlay.classList.remove('active');
+      closeMobileNav();
     }
   });
+
   // 点击遮罩层关闭菜单
   if (navOverlay) {
     navOverlay.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      navOverlay.classList.remove('active');
+      closeMobileNav();
     });
   }
+
+  // ESC 键关闭菜单
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMobileNav();
+  });
 }
 
 // ── Scroll header ──────────────────────────────────

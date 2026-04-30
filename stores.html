@@ -217,6 +217,41 @@
     </div>
   </footer>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-banner-inner">
+      <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+      <div class="cookie-text">
+        <h4 data-i18n="cookie_title">Cookie 使用声明</h4>
+        <p data-i18n="cookie_text">我们使用 Cookie 来提升您的浏览体验。访问我们的网站即表示您同意按照我们的 <a href="privacy.html" target="_blank">隐私政策</a> 使用 Cookie。</p>
+        <div id="cookieSettings" class="cookie-settings-panel">
+          <div class="cookie-categories">
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-essential" checked disabled />
+              <label for="cookie-essential"><strong data-i18n="cookie_essential">必要 Cookie</strong><span data-i18n="cookie_essential_desc">网站正常运行所必需的 Cookie，如语言偏好设置</span></label>
+            </div>
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-analytics" />
+              <label for="cookie-analytics"><strong data-i18n="cookie_analytics">分析 Cookie</strong><span data-i18n="cookie_analytics_desc">帮助我们了解访客如何与网站互动的 Cookie</span></label>
+            </div>
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-functional" />
+              <label for="cookie-functional"><strong data-i18n="cookie_functional">功能 Cookie</strong><span data-i18n="cookie_functional_desc">记住您的偏好设置，提供个性化体验</span></label>
+            </div>
+          </div>
+          <div class="cookie-settings-actions">
+            <button class="cookie-btn cookie-btn-reject" onclick="rejectNonEssentialCookies()" data-i18n="cookie_reject">仅必要</button>
+            <button class="cookie-btn cookie-btn-save" onclick="saveCookieSettings()" data-i18n="cookie_save">保存设置</button>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()" data-i18n="cookie_accept">接受全部</button>
+        <button class="cookie-btn cookie-btn-settings" onclick="toggleCookieSettings()" data-i18n="cookie_settings">Cookie 设置</button>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 
   <!-- 百度自动推送 (HTTPS only) -->

@@ -99,7 +99,7 @@
           <span data-i18n="about_us_badge">关于我们</span>
         </div>
         <h2 class="about-us-title" data-i18n="about_us_title">煲仔宗师 PotMaster</h2>
-        <p class="about-us-intro" data-i18n="about_us_intro">煲仔宗师 (PotMaster) 是由港资企业同熙商业科技控股有限公司倾力打造的高品质年轻化连锁煲仔饭品牌。</p>
+        <p class="about-us-intro" data-i18n="about_us_intro">煲仔宗师 (PotMaster) 是由广东同熙餐饮品牌管理有限公司倾力打造的高品质年轻化连锁煲仔饭品牌。</p>
         <p class="about-us-philosophy" data-i18n="about_us_philosophy">秉持"只要够用心，人人皆宗师"的品牌理念，在传承古法与现代创新之间寻得完美平衡。依托现代美学空间、创新板前现煲体验、匠心秘制出品以及专利AI智能煲仔炉的四大核心竞争力，我们正以前瞻性的视野重新定义中式快餐的品质高度。</p>
         <p class="about-us-vision" data-i18n="about_vision_text">未来品牌将扎根中国，走向世界，致力于成为全球连锁煲仔饭品类的头部品牌。</p>
       </div>
@@ -285,9 +285,44 @@
         <a href="contact.html" data-i18n="nav_contact">加盟合作</a>
         <a href="privacy.html" data-i18n="nav_privacy">隐私政策</a>
       </div>
-      <p class="footer-copy" data-i18n="footer_copy">&copy; 2025 PotMaster 煲仔宗师. All Rights Reserved.</p>
+      <p class="footer-copy" data-i18n="footer_copy">&copy; 2026 PotMaster 煲仔宗师. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-banner-inner">
+      <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+      <div class="cookie-text">
+        <h4 data-i18n="cookie_title">Cookie 使用声明</h4>
+        <p data-i18n="cookie_text">我们使用 Cookie 来提升您的浏览体验。访问我们的网站即表示您同意按照我们的 <a href="privacy.html" target="_blank">隐私政策</a> 使用 Cookie。</p>
+        <div id="cookieSettings" class="cookie-settings-panel">
+          <div class="cookie-categories">
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-essential" checked disabled />
+              <label for="cookie-essential"><strong data-i18n="cookie_essential">必要 Cookie</strong><span data-i18n="cookie_essential_desc">网站正常运行所必需的 Cookie，如语言偏好设置</span></label>
+            </div>
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-analytics" />
+              <label for="cookie-analytics"><strong data-i18n="cookie_analytics">分析 Cookie</strong><span data-i18n="cookie_analytics_desc">帮助我们了解访客如何与网站互动的 Cookie</span></label>
+            </div>
+            <div class="cookie-category">
+              <input type="checkbox" id="cookie-functional" />
+              <label for="cookie-functional"><strong data-i18n="cookie_functional">功能 Cookie</strong><span data-i18n="cookie_functional_desc">记住您的偏好设置，提供个性化体验</span></label>
+            </div>
+          </div>
+          <div class="cookie-settings-actions">
+            <button class="cookie-btn cookie-btn-reject" onclick="rejectNonEssentialCookies()" data-i18n="cookie_reject">仅必要</button>
+            <button class="cookie-btn cookie-btn-save" onclick="saveCookieSettings()" data-i18n="cookie_save">保存设置</button>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()" data-i18n="cookie_accept">接受全部</button>
+        <button class="cookie-btn cookie-btn-settings" onclick="toggleCookieSettings()" data-i18n="cookie_settings">Cookie 设置</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 

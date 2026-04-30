@@ -365,6 +365,19 @@ const i18n = {
     priv_cta_title: '还有其他问题？',
     priv_cta_sub: '我们的团队随时为您解答关于隐私保护的任何疑问。',
     priv_cta_btn: '联系我们',
+    // Cookie Consent
+    cookie_title: 'Cookie 使用声明',
+    cookie_text: '我们使用 Cookie 来提升您的浏览体验。访问我们的网站即表示您同意按照我们的 <a href="privacy.html" target="_blank">隐私政策</a> 使用 Cookie。',
+    cookie_essential: '必要 Cookie',
+    cookie_essential_desc: '网站正常运行所必需的 Cookie，如语言偏好设置',
+    cookie_analytics: '分析 Cookie',
+    cookie_analytics_desc: '帮助我们了解访客如何与网站互动的 Cookie',
+    cookie_functional: '功能 Cookie',
+    cookie_functional_desc: '记住您的偏好设置，提供个性化体验',
+    cookie_accept: '接受全部',
+    cookie_settings: 'Cookie 设置',
+    cookie_save: '保存设置',
+    cookie_reject: '仅必要',
   },
   en: {
     nav_home:    'Home',
@@ -724,6 +737,19 @@ const i18n = {
     priv_cta_title: 'Have more questions?',
     priv_cta_sub: 'Our team is ready to answer any questions about privacy protection.',
     priv_cta_btn: 'Contact Us',
+    // Cookie Consent
+    cookie_title: 'Cookie Notice',
+    cookie_text: 'We use cookies to enhance your browsing experience. By visiting our website, you agree to our use of cookies in accordance with our <a href="privacy.html" target="_blank">Privacy Policy</a>.',
+    cookie_essential: 'Essential Cookies',
+    cookie_essential_desc: 'Required for the website to function properly, such as language preferences',
+    cookie_analytics: 'Analytics Cookies',
+    cookie_analytics_desc: 'Help us understand how visitors interact with our website',
+    cookie_functional: 'Functional Cookies',
+    cookie_functional_desc: 'Remember your preferences and provide a personalized experience',
+    cookie_accept: 'Accept All',
+    cookie_settings: 'Cookie Settings',
+    cookie_save: 'Save Settings',
+    cookie_reject: 'Essential Only',
   },
   zh_tw: {
     // ── Nav ──
@@ -1087,6 +1113,19 @@ const i18n = {
     priv_cta_title: '還有其他問題？',
     priv_cta_sub: '我們的團隊隨時為您解答關於隱私保護的任何疑問。',
     priv_cta_btn: '聯繫我們',
+    // Cookie Consent
+    cookie_title: 'Cookie 使用聲明',
+    cookie_text: '我們使用 Cookie 來提升您的瀏覽體驗。訪問我們的網站即表示您同意按照我們的 <a href="privacy.html" target="_blank">隱私政策</a> 使用 Cookie。',
+    cookie_essential: '必要 Cookie',
+    cookie_essential_desc: '網站正常運行所必需的 Cookie，如語言偏好設置',
+    cookie_analytics: '分析 Cookie',
+    cookie_analytics_desc: '幫助我們了解訪客如何與網站互動的 Cookie',
+    cookie_functional: '功能 Cookie',
+    cookie_functional_desc: '記住您的偏好設置，提供個人化體驗',
+    cookie_accept: '接受全部',
+    cookie_settings: 'Cookie 設置',
+    cookie_save: '保存設置',
+    cookie_reject: '僅必要',
   }
 };
 
@@ -1253,3 +1292,83 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyLang(currentLang);
 });
+
+// ── Cookie Consent Banner (GDPR/PIPL) ─────────────────
+(function() {
+  const COOKIE_KEY = 'potmaster-cookie-consent';
+  const COOKIE_EXPIRY = 365; // days
+
+  // Cookie consent state
+  let consent = null;
+  try {
+    consent = JSON.parse(localStorage.getItem(COOKIE_KEY));
+  } catch (e) {
+    consent = null;
+  }
+
+  // If no consent yet, show banner
+  if (!consent) {
+    setTimeout(() => {
+      const banner = document.getElementById('cookieBanner');
+      if (banner) banner.classList.add('show');
+    }, 1000); // Delay slightly for better UX
+  }
+
+  // Accept all cookies
+  window.acceptAllCookies = function() {
+    const consentData = {
+      essential: true,
+      analytics: true,
+      functional: true,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
+    hideBanner();
+    console.log('[cookie] All cookies accepted');
+  };
+
+  // Save custom settings
+  window.saveCookieSettings = function() {
+    const checkboxes = document.querySelectorAll('.cookie-category input[type="checkbox"]');
+    const consentData = {
+      essential: true, // Always required
+      analytics: document.getElementById('cookie-analytics').checked,
+      functional: document.getElementById('cookie-functional').checked,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
+    hideBanner();
+    console.log('[cookie] Custom settings saved:', consentData);
+  };
+
+  // Reject non-essential cookies
+  window.rejectNonEssentialCookies = function() {
+    const consentData = {
+      essential: true,
+      analytics: false,
+      functional: false,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
+    hideBanner();
+    console.log('[cookie] Only essential cookies accepted');
+  };
+
+  // Toggle settings panel
+  window.toggleCookieSettings = function() {
+    const panel = document.getElementById('cookieSettings');
+    if (panel) {
+      panel.classList.toggle('show');
+    }
+  };
+
+  function hideBanner() {
+    const banner = document.getElementById('cookieBanner');
+    if (banner) {
+      banner.classList.remove('show');
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 400);
+    }
+  }
+})();

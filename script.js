@@ -489,11 +489,51 @@ const i18n = {
     tab_drink_title: 'Beverage Series',
     tab_drink_sub: 'Refreshing Drinks',
     // ── Popular Series ──
+    m_p1_name_en: 'Four Happiness Preserved Meat Clay Pot Rice',
+    m_p2_name_en: 'Sausage & Silky Chicken Clay Pot Rice',
+    // ── Classic Series ──
+    m_c1_name_en: 'Classic Preserved Meat Clay Pot Rice',
+    m_c2_name_en: 'Mushroom & Silky Chicken Clay Pot Rice',
+    m_c3_name_en: 'Garlic Spare Ribs Clay Pot Rice',
+    m_c4_name_en: 'Egg & Beef Clay Pot Rice',
+    m_c5_name_en: 'Garlic Eggplant Clay Pot Rice',
+    m_c6_name_en: 'Water Chestnut Squid Pork Cake Clay Pot Rice',
+    m_c7_name_en: 'Classic Three Treasures Clay Pot Rice',
+    m_c8_name_en: 'Phoenix Claw & Spare Rib Clay Pot Rice',
+    // ── Flavor Series ──
+    m_f1_name_en: 'Macau Shrimp Paste Pork Belly Clay Pot Rice',
+    m_f2_name_en: 'Yangjiang Black Bean Spareribs Clay Pot Rice',
+    m_f3_name_en: 'Hainan Black Pepper Beef Clay Pot Rice',
+    m_f4_name_en: 'Sanmenpo Sand Ginger Chicken Clay Pot Rice',
+    m_f5_name_en: 'Sichuan Roasted Chili Beef Clay Pot Rice',
+    m_f6_name_en: 'Chaoshan Soy Bean Silver Cod Clay Pot Rice',
+    // ── Innovation Series ──
+    m_i1_name_en: 'Cheese Black Truffle Clay Pot Rice',
+    m_i2_name_en: 'Japanese Premium Eel Clay Pot Rice',
+    m_i3_name_en: 'Angus Beef & Mozzarella Clay Pot Rice',
+    m_i4_name_en: 'Hand-Pressed Angus Beef Patty Clay Pot Rice',
+    m_i5_name_en: 'Diao Long Beef & Fresh Squid Clay Pot Rice',
+    m_i6_name_en: 'Five Blessings Abalone Clay Pot Rice',
+    // ── Dim Sum Series ──
+    m_d1_name_en: 'Signature Shrimp Dumplings',
+    m_d2_name_en: 'Steamed Chicken Feet with Bean Sauce',
+    m_d3_name_en: 'Steamed Ribs with Black Bean Sauce',
+    m_d4_name_en: 'Shrimp & Crab Roe Siu Mai',
+    m_d5_name_en: 'Swiss Sauce Chicken Wings',
+    // ── Soup Series ──
+    m_s1_name_en: 'Watercress & Apricot Kernel Soup',
+    m_s2_name_en: 'Fresh Ginseng & Old Chicken Soup',
+    // ── Beverage Series ──
+    m_dr1_name_en: 'Yashi Xiang Lemon Tea',
+    m_dr2_name_en: 'Jasmine Lemon Tea',
+    m_dr3_name_en: 'Grape Lemon Tea',
+    m_dr4_name_en: 'Guava Lemon Tea',
+    m_dr5_name_en: 'Fresh Squeezed Lemonade',
+    // ── Menu descriptions ──
     m_p1_name: 'Four Happiness Preserved Meat Clay Pot Rice',
     m_p1_desc: 'Cantonese handcrafted preserved meats — cured pork & sausage, naturally air-dried for rich, layered fragrance.',
     m_p2_name: 'Sausage & Silky Chicken Clay Pot Rice',
     m_p2_desc: '3:7 ratio handcrafted sausage with crisp casing & firm meat, paired with 180-day free-range Qingyuan chicken.',
-    // ── Classic Series ──
     m_c1_name: 'Classic Preserved Meat Clay Pot Rice',
     m_c1_desc: 'The sizzling aroma of preserved meat seeps into every grain, crowned with a perfectly golden crust.',
     m_c2_name: 'Mushroom & Silky Chicken Clay Pot Rice',
@@ -510,7 +550,6 @@ const i18n = {
     m_c7_desc: 'Cantonese three treasures together — savory preserved meat, tender spare ribs, juicy chicken, every bite a classic.',
     m_c8_name: 'Phoenix Claw & Spare Rib Clay Pot Rice',
     m_c8_desc: 'Tender phoenix claw meets juicy spare ribs — rich sauce soaking into crispy rice, double the delight in every bite.',
-    // ── Flavor Series ──
     m_f1_name: 'Macau Shrimp Paste Pork Belly Clay Pot Rice',
     m_f1_desc: 'Macau-style shrimp paste with layered pork belly — deeply umami, savory rice with a non-greasy crispy crust.',
     m_f2_name: 'Yangjiang Black Bean Spareribs Clay Pot Rice',
@@ -519,12 +558,22 @@ const i18n = {
     m_f3_desc: 'Hainan black pepper sizzling with fresh-cut tender beef — bold, spicy, and full of character.',
     m_f4_name: 'Sanmenpo Sand Ginger Chicken Clay Pot Rice',
     m_f4_desc: 'Featuring Sanmenpo sand ginger — aromatic and vibrant, tender juicy chicken with rich wok hei in every bite.',
-    // ── Innovation Series ──
+    m_f5_name: 'Sichuan Roasted Chili Beef Clay Pot Rice',
+    m_f5_desc: 'House-made roasted chilies bring bold heat, while paper-thin beef melts on your tongue — Sichuan and Cantonese souls united in crispy rice.',
+    m_f6_name: 'Chaoshan Soy Bean Silver Cod Clay Pot Rice',
+    m_f6_desc: 'Puning fermented soybean enhances the richness of silver cod — buttery smooth texture, authentically savory and fresh.',
+    m_i1_name: 'Cheese Black Truffle Clay Pot Rice',
+    m_i1_desc: 'Rich cheese enveloping premium black truffle aroma — a luxurious fusion of umami depth and creamy indulgence.',
     m_i2_name: 'Japanese Premium Eel Clay Pot Rice',
     m_i2_desc: 'Thick-cut premium eel glazed with secret teriyaki sauce over crispy, caramelized rice — full-bodied and satisfying.',
     m_i3_name: 'Angus Beef & Mozzarella Clay Pot Rice',
     m_i3_desc: 'Juicy Angus beef blanketed in stretchy mozzarella — the crispy rice absorbs every drop of meat juice and milky richness.',
-    // ── Dim Sum Series ──
+    m_i4_name: 'Hand-Pressed Angus Beef Patty Clay Pot Rice',
+    m_i4_desc: 'Premium Angus beef, hand-pressed to perfection — bouncy, juicy patties where rice and meat aromas intertwine into pure soul food.',
+    m_i5_name: 'Diao Long Beef & Fresh Squid Clay Pot Rice',
+    m_i5_desc: 'Tender diao long beef paired with springy fresh squid — savory juices soak into crispy rice for pure ocean-fresh delight.',
+    m_i6_name: 'Five Blessings Abalone Clay Pot Rice',
+    m_i6_desc: 'Bouncy abalone, savory preserved meat, tender chicken and ribs — five flavors in perfect harmony, every bite a taste of luxury.',
     m_d1_name: 'Signature Shrimp Dumplings',
     m_d1_desc: 'Crystal skin wrapped around whole shrimp, smooth, refreshing and sweet.',
     m_d2_name: 'Steamed Chicken Feet with Bean Sauce',
@@ -549,24 +598,6 @@ const i18n = {
     m_dr4_desc: 'Pink guava with creamy aroma, blended with fresh lemon, sweet and refreshing.',
     m_dr5_name: 'Fresh Squeezed Lemonade',
     m_dr5_desc: 'Pure fresh lemon juice, perfectly chilled, simple yet ultimate refreshment.',
-    m_f5_name: 'Sichuan Roasted Chili Beef Clay Pot Rice',
-    m_f5_desc: 'House-made roasted chilies bring bold heat, while paper-thin beef melts on your tongue — Sichuan and Cantonese souls united in crispy rice.',
-    m_f6_name: 'Chaoshan Soy Bean Silver Cod Clay Pot Rice',
-    m_f6_desc: 'Puning fermented soybean enhances the richness of silver cod — buttery smooth texture, authentically savory and fresh.',
-    m_i1_name: 'Cheese Black Truffle Clay Pot Rice',
-    m_i1_desc: 'Rich cheese enveloping premium black truffle aroma — a luxurious fusion of umami depth and creamy indulgence.',
-    m_i4_name: 'Hand-Pressed Angus Beef Patty Clay Pot Rice',
-    m_i4_desc: 'Premium Angus beef, hand-pressed to perfection — bouncy, juicy patties where rice and meat aromas intertwine into pure soul food.',
-    m_i5_name: 'Diao Long Beef & Fresh Squid Clay Pot Rice',
-    m_i5_desc: 'Tender diao long beef paired with springy fresh squid — savory juices soak into crispy rice for pure ocean-fresh delight.',
-    m_i6_name: 'Five Blessings Abalone Clay Pot Rice',
-    m_i6_desc: 'Bouncy abalone, savory preserved meat, tender chicken and ribs — five flavors in perfect harmony, every bite a taste of luxury.',
-    m_c6_name: 'Water Chestnut Squid Pork Cake Clay Pot Rice',
-    m_c6_desc: 'Crispy water chestnuts meet fresh squid — a thick, juicy pork cake with golden crispy crust, pure Cantonese essence.',
-    m_c7_name: 'Classic Three Treasures Clay Pot Rice',
-    m_c7_desc: 'Cantonese three treasures together — savory preserved meat, tender spare ribs, juicy chicken, every bite a classic.',
-    m_c8_name: 'Phoenix Claw & Spare Rib Clay Pot Rice',
-    m_c8_desc: 'Tender phoenix claw meets juicy spare ribs — rich sauce soaking into crispy rice, double the delight in every bite.',
     menu_note:    '* Photos are for reference only.',
     about_tag:    'See Yourself · Know Yourself',
     about_hero_title: 'Our Story',
@@ -1293,13 +1324,68 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLang(currentLang);
 });
 
+// ── Privacy Accordion ─────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  var accordionHeaders = document.querySelectorAll('.accordion-header');
+
+  if (accordionHeaders.length > 0) {
+    accordionHeaders.forEach(function(header) {
+      header.addEventListener('click', function() {
+        var isExpanded = this.getAttribute('aria-expanded') === 'true';
+        var body = this.nextElementSibling;
+        var icon = this.querySelector('.accordion-icon i');
+
+        // Close all other accordions
+        accordionHeaders.forEach(function(h) {
+          if (h !== header) {
+            h.setAttribute('aria-expanded', 'false');
+            if (h.nextElementSibling) h.nextElementSibling.style.maxHeight = null;
+            var hIcon = h.querySelector('.accordion-icon i');
+            if (hIcon) hIcon.className = 'fas fa-plus';
+          }
+        });
+
+        // Toggle current accordion
+        if (!isExpanded) {
+          header.setAttribute('aria-expanded', 'true');
+          if (body) body.style.maxHeight = body.scrollHeight + 'px';
+          if (icon) icon.className = 'fas fa-minus';
+        } else {
+          header.setAttribute('aria-expanded', 'false');
+          if (body) body.style.maxHeight = null;
+          if (icon) icon.className = 'fas fa-plus';
+        }
+      });
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('.privacy-nav-card').forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.getAttribute('href').substring(1);
+        var targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          // First open the accordion
+          var accordionHeader = targetSection.querySelector('.accordion-header');
+          if (accordionHeader && accordionHeader.getAttribute('aria-expanded') === 'false') {
+            accordionHeader.click();
+          }
+          // Then scroll to it
+          setTimeout(function() {
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      });
+    });
+  }
+});
+
 // ── Cookie Consent Banner (GDPR/PIPL) ─────────────────
 (function() {
-  const COOKIE_KEY = 'potmaster-cookie-consent';
-  const COOKIE_EXPIRY = 365; // days
+  var COOKIE_KEY = 'potmaster-cookie-consent';
 
   // Cookie consent state
-  let consent = null;
+  var consent = null;
   try {
     consent = JSON.parse(localStorage.getItem(COOKIE_KEY));
   } catch (e) {
@@ -1308,15 +1394,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // If no consent yet, show banner
   if (!consent) {
-    setTimeout(() => {
-      const banner = document.getElementById('cookieBanner');
+    setTimeout(function() {
+      var banner = document.getElementById('cookieBanner');
       if (banner) banner.classList.add('show');
-    }, 1000); // Delay slightly for better UX
+    }, 1000);
   }
 
   // Accept all cookies
   window.acceptAllCookies = function() {
-    const consentData = {
+    var consentData = {
       essential: true,
       analytics: true,
       functional: true,
@@ -1324,26 +1410,23 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
     hideBanner();
-    console.log('[cookie] All cookies accepted');
   };
 
   // Save custom settings
   window.saveCookieSettings = function() {
-    const checkboxes = document.querySelectorAll('.cookie-category input[type="checkbox"]');
-    const consentData = {
-      essential: true, // Always required
-      analytics: document.getElementById('cookie-analytics').checked,
-      functional: document.getElementById('cookie-functional').checked,
+    var consentData = {
+      essential: true,
+      analytics: document.getElementById('cookie-analytics') ? document.getElementById('cookie-analytics').checked : false,
+      functional: document.getElementById('cookie-functional') ? document.getElementById('cookie-functional').checked : false,
       timestamp: Date.now()
     };
     localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
     hideBanner();
-    console.log('[cookie] Custom settings saved:', consentData);
   };
 
   // Reject non-essential cookies
   window.rejectNonEssentialCookies = function() {
-    const consentData = {
+    var consentData = {
       essential: true,
       analytics: false,
       functional: false,
@@ -1351,24 +1434,44 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     localStorage.setItem(COOKIE_KEY, JSON.stringify(consentData));
     hideBanner();
-    console.log('[cookie] Only essential cookies accepted');
   };
 
   // Toggle settings panel
   window.toggleCookieSettings = function() {
-    const panel = document.getElementById('cookieSettings');
+    var panel = document.getElementById('cookieSettings');
     if (panel) {
       panel.classList.toggle('show');
     }
   };
 
   function hideBanner() {
-    const banner = document.getElementById('cookieBanner');
+    var banner = document.getElementById('cookieBanner');
     if (banner) {
       banner.classList.remove('show');
-      setTimeout(() => {
+      setTimeout(function() {
         banner.style.display = 'none';
       }, 400);
     }
   }
 })();
+
+// ── Cookie Consent Banner Event Listeners ─────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  var acceptBtn = document.getElementById('acceptAllCookies');
+  var rejectBtn = document.getElementById('rejectCookies');
+  var saveBtn = document.getElementById('saveCookies');
+  var toggleBtn = document.getElementById('toggleCookieSettings');
+  
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', window.acceptAllCookies);
+  }
+  if (rejectBtn) {
+    rejectBtn.addEventListener('click', window.rejectNonEssentialCookies);
+  }
+  if (saveBtn) {
+    saveBtn.addEventListener('click', window.saveCookieSettings);
+  }
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', window.toggleCookieSettings);
+  }
+});

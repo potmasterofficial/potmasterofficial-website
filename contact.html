@@ -40,6 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="inline-scripts.js"></script>
 </head>
 <body>
 
@@ -81,7 +82,7 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="page-hero-bg">
-      <img src="images/contact-hero.jpg" alt="Store Locations" />
+      <img src="images/contact-hero.jpg" alt="煲仔宗师联系我们" />
       <div class="hero-overlay"></div>
     </div>
     <div class="page-hero-content container">
@@ -114,9 +115,9 @@
           <p class="clickable-text" onclick="showWechatQR()">煲仔宗师 PotMaster</p>
         </div>
         <div class="contact-card">
-          <div class="cc-icon"><i class="fab fa-instagram"></i></div>
-          <h4 data-i18n="ci_weibo_title">官方小红书</h4>
-          <p class="clickable-text" data-i18n="ci_weibo_desc" onclick="showQRCode()">煲仔宗师官方账号</p>
+          <div class="cc-icon"><svg class="xhs-icon" viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/></svg></div>
+          <h4 data-i18n="ci_xiaohongshu_title">官方小红书</h4>
+          <p class="clickable-text" data-i18n="ci_xiaohongshu_desc" onclick="showQRCode()">煲仔宗师官方账号</p>
         </div>
       </div>
     </div>
@@ -144,33 +145,11 @@
   <!-- QR Code Modal -->
   <div id="qrModal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeQRCode()">&times;</span>
+      <span class="close" id="closeQRCode">&times;</span>
       <h3 id="qrTitle"></h3>
       <img id="qrImage" src="" alt="二维码" style="max-width: 100%; border-radius: 8px;">
     </div>
   </div>
-
-  <script>
-  function showQRCode() {
-    document.getElementById('qrTitle').textContent = '煲仔宗师官方账号';
-    document.getElementById('qrImage').src = 'dishes/xiaohongshu-qr.jpg';
-    document.getElementById('qrModal').style.display = 'flex';
-  }
-  function showWechatQR() {
-    document.getElementById('qrTitle').textContent = '煲仔宗师 PotMaster';
-    document.getElementById('qrImage').src = 'dishes/wechat-qr.jpg';
-    document.getElementById('qrModal').style.display = 'flex';
-  }
-  function closeQRCode() {
-    document.getElementById('qrModal').style.display = 'none';
-  }
-  window.onclick = function(event) {
-    var modal = document.getElementById('qrModal');
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  }
-  </script>
 
   <!-- Cookie Consent Banner -->
   <div id="cookieBanner" class="cookie-banner">
@@ -195,28 +174,19 @@
             </div>
           </div>
           <div class="cookie-settings-actions">
-            <button class="cookie-btn cookie-btn-reject" onclick="rejectNonEssentialCookies()" data-i18n="cookie_reject">仅必要</button>
-            <button class="cookie-btn cookie-btn-save" onclick="saveCookieSettings()" data-i18n="cookie_save">保存设置</button>
+            <button class="cookie-btn cookie-btn-reject" data-i18n="cookie_reject" id="rejectCookies">仅必要</button>
+            <button class="cookie-btn cookie-btn-save" data-i18n="cookie_save" id="saveCookies">保存设置</button>
           </div>
         </div>
       </div>
       <div class="cookie-actions">
-        <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()" data-i18n="cookie_accept">接受全部</button>
-        <button class="cookie-btn cookie-btn-settings" onclick="toggleCookieSettings()" data-i18n="cookie_settings">Cookie 设置</button>
+        <button class="cookie-btn cookie-btn-accept" data-i18n="cookie_accept" id="acceptAllCookies">接受全部</button>
+        <button class="cookie-btn cookie-btn-settings" data-i18n="cookie_settings" id="toggleCookieSettings">Cookie 设置</button>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
 
-  <!-- 百度自动推送 (HTTPS only) -->
-  <script>
-  (function(){
-      var bp = document.createElement('script');
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-  </script>
 </body>
 </html>

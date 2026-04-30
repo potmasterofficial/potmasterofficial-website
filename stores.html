@@ -60,6 +60,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="inline-scripts.js" defer></script>
 </head>
 <body>
 
@@ -101,7 +102,7 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="page-hero-bg">
-      <img src="images/contact-hero.jpg" alt="Store Locations" />
+      <img src="images/contact-hero.jpg" alt="煲仔宗师门店信息" />
       <div class="hero-overlay"></div>
     </div>
     <div class="page-hero-content container">
@@ -121,7 +122,7 @@
         <!-- Store 1 -->
         <div class="location-card">
           <div class="location-img">
-            <img src="images/store1.jpg" alt="Store 1" loading="lazy" />
+            <img src="images/store1.jpg" alt="煲仔宗师前传南站喜街店" loading="lazy" />
             <div class="location-badge" data-i18n="store1_badge">中国·广州</div>
           </div>
           <div class="location-info">
@@ -142,7 +143,7 @@
         <!-- Store 2 -->
         <div class="location-card">
           <div class="location-img">
-            <img src="images/store2.jpg" alt="Store 2" loading="lazy" />
+            <img src="images/store2.jpg" alt="煲仔宗师番禺天河城店" loading="lazy" />
             <div class="location-badge" data-i18n="store2_badge">中国·广州</div>
           </div>
           <div class="location-info">
@@ -163,7 +164,7 @@
         <!-- Store 3 -->
         <div class="location-card">
           <div class="location-img">
-            <img src="images/store3.jpg" alt="Store 3" loading="lazy" />
+            <img src="images/store3.jpg" alt="煲仔宗师番禺K11店" loading="lazy" />
             <div class="location-badge" data-i18n="store3_badge">中国·广州</div>
           </div>
           <div class="location-info">
@@ -240,28 +241,18 @@
             </div>
           </div>
           <div class="cookie-settings-actions">
-            <button class="cookie-btn cookie-btn-reject" onclick="rejectNonEssentialCookies()" data-i18n="cookie_reject">仅必要</button>
-            <button class="cookie-btn cookie-btn-save" onclick="saveCookieSettings()" data-i18n="cookie_save">保存设置</button>
+            <button class="cookie-btn cookie-btn-reject" data-i18n="cookie_reject" id="rejectCookies">仅必要</button>
+            <button class="cookie-btn cookie-btn-save" data-i18n="cookie_save" id="saveCookies">保存设置</button>
           </div>
         </div>
       </div>
       <div class="cookie-actions">
-        <button class="cookie-btn cookie-btn-accept" onclick="acceptAllCookies()" data-i18n="cookie_accept">接受全部</button>
-        <button class="cookie-btn cookie-btn-settings" onclick="toggleCookieSettings()" data-i18n="cookie_settings">Cookie 设置</button>
+        <button class="cookie-btn cookie-btn-accept" data-i18n="cookie_accept" id="acceptAllCookies">接受全部</button>
+        <button class="cookie-btn cookie-btn-settings" data-i18n="cookie_settings" id="toggleCookieSettings">Cookie 设置</button>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
-
-  <!-- 百度自动推送 (HTTPS only) -->
-  <script>
-  (function(){
-      var bp = document.createElement('script');
-      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-  </script>
 </body>
 </html>

@@ -1336,7 +1336,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .location-actions {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--light-gray);
@@ -1344,8 +1344,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .dianping-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
   background: linear-gradient(135deg, #FF6B35 0%, #FF4500 100%);
   color: var(--white);
   font-size: 0.82rem;
@@ -1364,9 +1364,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: translateY(0);
 }
 .dianping-btn img {
-  width: 18px;
-  height: 18px;
-  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: contain;
 }
 
 /* HOURS SECTION */

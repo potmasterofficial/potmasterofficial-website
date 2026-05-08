@@ -457,15 +457,26 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .strength-item:hover { background: var(--mid); }
 .strength-icon {
-  font-size: 1.6rem;
-  color: var(--gold);
+  font-size: 2.2rem;
+  line-height: 1;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 56px;
+  height: 56px;
   background: rgba(201, 168, 76, 0.1);
-  border-radius: 50%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+.strength-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.strength-item:hover .strength-icon {
+  background: rgba(201, 168, 76, 0.2);
+  transform: scale(1.05);
 }
 .strength-item h3 {
   font-family: var(--font-display);
@@ -1490,12 +1501,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hamburger:hover {
     background: rgba(201,168,76,0.25);
   }
-  .hamburger i {
-    font-size: 1.3rem;
-    color: #C9A84C;
-    transition: transform 0.3s;
+  .hamburger svg.menu-icon {
+    width: 20px;
+    height: 20px;
   }
-  .hamburger.open i {
+  .hamburger.open svg.menu-icon {
     transform: rotate(90deg);
   }
 

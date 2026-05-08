@@ -1585,6 +1585,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .three-realms { gap: 2px; }
   .dishes-grid { grid-template-columns: 1fr; }
   .strengths-grid { grid-template-columns: 1fr; }
+  /* 移动端竞争力图标 - 确保SVG显示 */
+  .strength-item {
+    align-items: center;
+    text-align: center;
+  }
+  .strength-icon {
+    margin: 0 auto 1rem;
+    display: flex !important;
+  }
+  .strength-icon svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
   .why-grid { grid-template-columns: 1fr; }
   .store-grid { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: repeat(2, 1fr); }
@@ -1620,6 +1633,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   :root { --pad-x: 1.25rem; }
   .contact-cards { grid-template-columns: 1fr; }
   .vt-item { flex-direction: column; gap: 0.5rem; }
+
+  /* 移动端竞争力图标 - 480px专属 */
+  .strengths-grid { grid-template-columns: 1fr; }
+  .strength-item {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .strength-icon {
+    margin: 0 auto 1rem;
+  }
+  .strength-icon svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
 
   /* 移动端页面英雄区 - 优化标题大小 */
   .page-hero { height: clamp(280px, 50vw, 400px); }

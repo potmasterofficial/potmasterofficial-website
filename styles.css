@@ -780,13 +780,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--black);
   margin-bottom: 0.2rem;
 }
-.en-name {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: var(--gold-dark);
-  font-weight: 500;
-}
-.menu-item-info p:not(.en-name):not(.en-desc):not(.dish-name-en) {
+.menu-item-info p:not(.en-desc):not(.dish-name-en) {
   font-size: 0.88rem;
   color: var(--text-body);
   line-height: 1.65;

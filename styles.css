@@ -532,9 +532,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 0.2rem;
 }
 .dish-name-en {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: var(--gold-dark);
+  font-size: 0.72rem !important;
+  letter-spacing: 0.06em !important;
+  color: #9A7A2E !important;
   margin-bottom: 0.7rem;
   font-weight: 500;
   height: 2.4rem;

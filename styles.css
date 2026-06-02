@@ -533,8 +533,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .dish-name-en {
   font-size: 0.72rem;
-  letter-spacing: 0.05em;
-  color: var(--gold);
+  letter-spacing: 0.06em;
+  color: var(--gold-dark);
   margin-bottom: 0.7rem;
   font-weight: 500;
   height: 2.4rem;
@@ -786,7 +786,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--gold-dark);
   font-weight: 500;
 }
-.menu-item-info p:not(.en-name):not(.en-desc) {
+.menu-item-info p:not(.en-name):not(.en-desc):not(.dish-name-en) {
   font-size: 0.88rem;
   color: var(--text-body);
   line-height: 1.65;

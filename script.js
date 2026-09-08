@@ -255,7 +255,7 @@ const i18n = {
     store3_badge: '中国·广州', store3_name: '煲仔宗师番禺K11店', store3_address: '门店地址：中国广州市番禺K11负一层B138号铺', store3_date: '营业时间：10:00-22:00',
     store4_badge: '中国·广州', store4_name: '煲仔宗师啤酒厂1985店', store4_address: '门店地址：中国广州市海珠琶醍啤酒厂1985二层229-230铺', store4_date: '营业时间：筹备中',
     store5_badge: '中国·广州', store5_name: '煲仔宗师东方宝泰店', store5_address: '门店地址：中国广州市天河区东方宝泰负一层J区1329B', store5_date: '营业时间：筹备中',
-    store6_badge: '中国·广州', store6_name: '煲仔宗师北京路天河城店', store6_address: '门店地址：中国广州市北京路天河城A区7楼', store6_date: '营业时间：筹备中',
+    store6_badge: '中国·广州', store6_name: '煲仔宗师金茂广场店', store6_address: '门店地址：中国广州市天河区金茂广场', store6_date: '营业时间：筹备中',
     // Contact Info
     ci_badge: '联系我们', ci_title: '联系我们', ci_sub: '',
     ci_phone_title: '服务热线', ci_email_title: '电子邮箱', ci_wechat_title: '微信公众号', ci_wechat_desc: '搜索关注',
@@ -675,7 +675,7 @@ const i18n = {
     store3_badge: 'China · Guangzhou', store3_name: 'POTMASTER @PANYU K11', store3_address: 'Store Address: Shop B138, B1/F, Panyu K11, Guangzhou, China', store3_date: 'Business Hours: 10:00-22:00',
     store4_badge: 'China · Guangzhou', store4_name: 'POTMASTER @PAZHOU BREWERY 1985', store4_address: 'Store Address: Shop 229-230, 2/F, Pazhou Brewery 1985, Haizhu District, Guangzhou, China', store4_date: 'Coming Soon',
     store5_badge: 'China · Guangzhou', store5_name: 'POTMASTER @PO PARK', store5_address: 'Store Address: Zone J, B1/F, Po Park, Tianhe District, Guangzhou, China', store5_date: 'Coming Soon',
-    store6_badge: 'China · Guangzhou', store6_name: 'POTMASTER @BEIJING RD. TEEMALL', store6_address: 'Store Address: 7/F, Zone A, Teemall, Beijing Road, Guangzhou, China', store6_date: 'Coming Soon',
+    store6_badge: 'China · Guangzhou', store6_name: 'POTMASTER @JINMAO PLAZA', store6_address: 'Store Address: Jinmao Plaza, Tianhe District, Guangzhou, China', store6_date: 'Coming Soon',
     ci_badge: 'Contact Us', ci_title: 'Get in Touch', ci_sub: '',
     ci_phone_title: 'Hotline', ci_email_title: 'Email', ci_wechat_title: 'WeChat', ci_wechat_desc: 'Follow us',
     ci_weibo_title: 'Official Xiaohongshu', ci_weibo_desc: 'PotMaster Official Account',
@@ -1060,7 +1060,7 @@ const i18n = {
     store3_badge: '中國·廣州', store3_name: '煲仔宗師番禺K11店', store3_address: '門店地址：中國廣州市番禺K11負一層B138號鋪', store3_date: '營業時間：10:00-22:00',
     store4_badge: '中國·廣州', store4_name: '煲仔宗師啤酒廠1985店', store4_address: '門店地址：中國廣州市海珠琶醍啤酒廠1985二層229-230舖', store4_date: '營業時間：籌備中',
     store5_badge: '中國·廣州', store5_name: '煲仔宗師東方寶泰店', store5_address: '門店地址：中國廣州市天河區東方寶泰負一層J區1329B', store5_date: '營業時間：籌備中',
-    store6_badge: '中國·廣州', store6_name: '煲仔宗師北京路天河城店', store6_address: '門店地址：中國廣州市北京路天河城A區7樓', store6_date: '營業時間：籌備中',
+    store6_badge: '中國·廣州', store6_name: '煲仔宗師金茂廣場店', store6_address: '門店地址：中國廣州市天河區金茂廣場', store6_date: '營業時間：籌備中',
     // Contact Info
     ci_badge: '聯繫我們', ci_title: '聯繫我們', ci_sub: '',
     ci_phone_title: '服務熱線', ci_email_title: '電子郵箱', ci_wechat_title: '微信公眾號', ci_wechat_desc: '搜索關注',
